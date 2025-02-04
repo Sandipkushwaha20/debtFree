@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p className='text-5xl'>Helddlo</p>
+      <p className='text-5xl'>Heljjjddlo</p>
     </>
   )
 }

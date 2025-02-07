@@ -1,59 +1,41 @@
-import React from 'react'
-import HeroSection from './HomePage/HeroSection'
-import CTACard from '../CommonCom/Card'
-import DC01 from "../../../public/Icons/Section_Icons/DC01.png"
+import React from "react";
+import HeroSection from "./HomePage/HeroSection";
+import CTACard from "../CommonCom/Card";
+import DC01 from "../../../public/Icons/Section_Icons/DC01.png";
 
-// import cardData from '../../data/data'
-const cardData = [
-    {
-      icon: "DC01",
-      heading: "Debt Counselling",
-      para: "Help clients improve their credit scores by providing personalized financial advice",
-      link: "/login"
-    },
-    {
-      icon: "IC02",
-      heading: "Investment Consulting",
-      para: "Provide insights on the best investment opportunities tailored to individual needs",
-      link: "/invest"
-    },
-    {
-      icon: "LC03",
-      heading: "Loan Consulting",
-      para: "Assist clients in finding the best loan options with favorable terms",
-      link: "/loans"
-    },
-    {
-      icon: "FC04",
-      heading: "Financial Coaching",
-      para: "Guide clients in managing their finances effectively for a stable future",
-      link: "/coaching"
-    }
-  ];
+import cardData from "../../datas/data";
+import HeroSection01 from "./HomePage/HeroSection";
+import HeroSection02 from "./HomePage/HeroSection02";
 
 const Home = () => {
-    // console.log("Kdkdk  ",cardData);
+  // console.log("Kdkdk  ",cardData);
   return (
-    <div className='flex flex-col items-center justify-center '>
-        {/* HeroSection 01 */}
-        <HeroSection/>
-        {/* Section 02 */}
+    <div className="flex flex-col items-center justify-center ">
+      {/* HeroSection 01 */}
+      <HeroSection01 />
+      {/* Section 02 */}
 
-        {/* Section 03 */}
-        <div className="flex flex-row gap-4">
-        {/* console.log(cardData) */}
+      {/* Section 03 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {cardData.map((card, index) => (
-            <CTACard key={index} icon={card.icon} heading={card.heading} linkto={card.link}>
+          <CTACard
+            key={index}
+            icon={card.icon}
+            heading={card.heading}
+            linkto={card.link}
+          >
             <div className="flex items-center justify-between">
-                <p className="text-[16px] text-richblack-500">{card.para}</p>
+              <p className="text-[16px] text-richblack-500">{card.para}</p>
             </div>
-            </CTACard>
+          </CTACard>
         ))}
-    </div>
-        
+      </div>
+      {/* Section 04 */}
 
+      {/* Section 05 */}
+      <HeroSection02 />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

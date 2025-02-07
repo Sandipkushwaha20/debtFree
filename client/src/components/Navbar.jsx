@@ -10,18 +10,16 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-       
-        <Logo/>
+        <Logo />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          
           <div className="">
-              <CTAButton active={true} linkto={"/login"}>
-                <div className="flex items-center gap-3">
-                  Get started
-                  {/* <FaArrowRight /> */}
-                </div>
-              </CTAButton>
-            </div>
+            <CTAButton active={true} linkto={"/login"}>
+              <div className="flex items-center gap-3">
+                Get started
+                {/* <FaArrowRight /> */}
+              </div>
+            </CTAButton>
+          </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"

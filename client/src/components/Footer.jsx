@@ -26,17 +26,13 @@ const Footer = () => {
   return (
     <div className="bg-richblack-800">
       <div className="flex lg:flex-row gap-8 items-center justify-between w-11/12 max-w-maxContent text-richblack-400 leading-6 mx-auto relative py-14">
-        
         <div className="border-b w-[100%] flex flex-col lg:flex-row pb-5 border-richblack-700">
-        
           {/* Section 1 */}
           <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
               {/* <img src={Logo} alt="" className="object-contain" /> */}
-              <Logo  />
-              <h1 className="font-semibold text-[16px] mt-0">
-                Company
-              </h1>
+              <Logo />
+              <h1 className="font-semibold text-[16px] mt-0">Company</h1>
               <div className="flex flex-col gap-2">
                 {["About", "Careers", "Affiliates"].map((ele, i) => {
                   return (
@@ -269,7 +265,9 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">© 2025 DebtFree™ is a registered trademark. All Rights Reserved.</div>
+          <div className="text-center">
+            © 2025 DebtFree™ is a registered trademark. All Rights Reserved.
+          </div>
         </div>
       </div>
     </div>

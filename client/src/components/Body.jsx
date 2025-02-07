@@ -1,4 +1,5 @@
 import Footer from "./Footer"
+import Meter from "./Meter"
 import Navbar from "./Navbar"
 import {Outlet} from "react-router-dom"
 const Body = () =>{

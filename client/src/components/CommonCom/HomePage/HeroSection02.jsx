@@ -1,5 +1,5 @@
 import React from "react";
-import CTAButton from "../../CommonCom/Button";
+import CTAButton from "../Button";
 import { FaArrowRight } from "react-icons/fa";
 import Hero02 from "../../../../public/Images/hero02.png";
 import speedometer from "../../../../public/Icons/speedometer.png";

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import DC01 from "../../../public/Icons/Section_Icons/DC01.png"
+// import DC01 from "../../../public/Icons/Section_Icons/DC01.png"
 const Card = ({icon, heading, linkto, children}) => {
   return (
-    <div className="h-50 w-90 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="h-50 w-90 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg on-hover:shadow-2xl"> 
         <div>
             <Link to={linkto} className="flex items-center gap-5">
                 <img src={icon} className="w-12 h-12" />
